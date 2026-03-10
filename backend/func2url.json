@@ -1,3 +1,5 @@
 {
+  "auth": "https://functions.poehali.dev/c827d266-7636-4121-935a-c1690b72be57",
+  "bundles": "https://functions.poehali.dev/827a6575-dfb0-4a95-98bf-35f4d3f0cef4",
   "parse-url": "https://functions.poehali.dev/c32af150-15f2-42b4-8d7a-fa9401b70b04"
 }
