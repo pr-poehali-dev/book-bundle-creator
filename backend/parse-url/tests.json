@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "Parse URL - valid request",
+      "method": "POST",
+      "path": "/",
+      "body": {"url": "https://example.com"},
+      "expectedStatus": 200,
+      "expectedBody": {"url": "string"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Parse URL - missing url",
+      "method": "POST",
+      "path": "/",
+      "body": {"url": ""},
+      "expectedStatus": 400,
+      "expectedBody": {"error": "URL is required"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
