@@ -285,7 +285,7 @@ function BundleCard({
             onChange={(e) =>
               onUpdate({ ...bundle, name: e.target.value })
             }
-            className="font-cormorant text-xl bg-transparent border-none outline-none text-foreground min-w-0 flex-1"
+            className="font-cormorant text-xl bg-transparent border-b border-transparent hover:border-border focus:border-primary outline-none text-foreground min-w-0 flex-1 transition-colors cursor-text"
           />
         </div>
 
